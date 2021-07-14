@@ -6,6 +6,14 @@ $(document).ready(function () {
     $(".sidenav").sidenav({edge: "right"});
     $(".collapsible").collapsible();
     $(".tooltipped").tooltip();
+    $(".datepicker").datepicker({
+        format: "dd mmmm, yyyy",
+        yearRange: 3,
+        showClearBtn: true,
+        i18n: {
+            done: "Select"
+        }
+    });
 });
 
 
@@ -23,4 +31,13 @@ $(document).ready(function () {
 //     let collapsiblesInstance = M.Collapsible.init(collapsibles);
 //     let tooltips = document.querySelectorAll(".tooltipped");
 //     let tooltipsInstance = M.Tooltip.init(tooltips);
+//     let datepickers = document.querySelectorAll(".datepicker");
+//     let datepickersInstance = M.Datepicker.init(datepickers, {
+//         format: "dd mmmm, yyyy",
+//         yearRange: 3,
+//         showClearBtn: true,
+//         i18n: {
+//             done: "Select"
+//         }
+//     });
 // });
